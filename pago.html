@@ -3,77 +3,88 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Pagar inscripción</title>
+<title>Pago del Curso</title>
 
 <style>
-
 body{
-font-family:Arial;
-background:#f4f6fb;
-text-align:center;
-padding:40px;
+font-family: Arial, Helvetica, sans-serif;
+background:#f5f5f5;
+display:flex;
+justify-content:center;
+align-items:center;
+height:100vh;
+margin:0;
 }
 
-.box{
+.contenedor{
 background:white;
-max-width:500px;
-margin:auto;
-padding:30px;
-border-radius:12px;
-box-shadow:0 10px 25px rgba(0,0,0,0.15);
+padding:40px;
+border-radius:10px;
+box-shadow:0 0 10px rgba(0,0,0,0.1);
+text-align:center;
+width:350px;
 }
 
-.key{
-font-size:24px;
-font-weight:bold;
-background:#ffd000;
-padding:10px;
-border-radius:8px;
-margin:15px 0;
+h1{
+color:#333;
 }
 
-.btn{
+.precio{
+font-size:28px;
+color:#2c7be5;
+margin:20px 0;
+}
+
+.boton-pago{
 display:inline-block;
-margin-top:20px;
-background:#25D366;
+padding:15px 30px;
+background:#28a745;
 color:white;
-text-decoration:none;
-padding:14px 28px;
 font-size:18px;
-border-radius:40px;
-font-weight:bold;
+text-decoration:none;
+border-radius:8px;
+transition:0.3s;
 }
 
+.boton-pago:hover{
+background:#218838;
+}
+
+.metodos{
+margin-top:20px;
+font-size:14px;
+color:#555;
+}
 </style>
+
 </head>
 
 <body>
 
-<div class="box">
+<div class="contenedor">
 
-<h1>Pagar inscripción</h1>
+<h1>Pago del Curso</h1>
 
-<p><b>Valor: 20.000 pesos</b></p>
+<p>Acceso al curso después del pago.</p>
 
-<p>Realiza el pago a la siguiente llave bancaria:</p>
+<div class="precio">$50.000 COP</div>
 
-<div class="key">
-321 806 5239
-</div>
-
-<p>Banco: Bancomeva</p>
-
-<a class="btn"
-href="https://wa.me/573218065239?text=Hola%20ya%20realicé%20el%20pago%20de%20las%20clases%20de%20inglés%20y%20adjunto%20el%20comprobante"
+<a class="boton-pago"
+href="https://checkout.wompi.co/l/XXXXXXXX"
 target="_blank">
-
-Confirmar pago por WhatsApp
-
+Pagar ahora
 </a>
 
-<br><br>
+<div class="metodos">
+Aceptamos:<br>
+💳 Tarjetas de crédito<br>
+🏦 PSE<br>
+📱 Nequi
+</div>
 
-<a href="index.html">← Volver</a>
+<p style="margin-top:20px;font-size:12px;color:#777;">
+Pagos procesados para @COO3218065239
+</p>
 
 </div>
 
