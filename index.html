@@ -1,178 +1,221 @@
-# Archivo 1: index.html
-
-```html
 <!DOCTYPE html>
 <html lang="es">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Clases de Inglés</title>
+<title>Clases de Inglés - Inscripciones Abiertas</title>
 
 <style>
+
 body{
 margin:0;
 font-family:Arial, Helvetica, sans-serif;
+background:#f5f7fb;
+color:#333;
+}
+
+header{
+background:linear-gradient(135deg,#1e3c72,#2a5298);
 color:white;
+padding:70px 20px;
 text-align:center;
-background-image:url("https://images.unsplash.com/photo-1522202176988-66273c2fd55f");
-background-size:cover;
-background-position:center;
 }
 
-.overlay{
-background:rgba(0,0,0,0.7);
-min-height:100vh;
-padding:40px 20px;
+header h1{
+font-size:52px;
+margin-bottom:10px;
 }
 
-h1{font-size:40px}
+header p{
+font-size:22px;
+opacity:0.9;
+}
+
+.container{
+max-width:1100px;
+margin:auto;
+padding:50px 20px;
+}
 
 .price{
-background:#ffd000;
+font-size:42px;
+background:#ffcc00;
 color:#000;
-font-size:30px;
-padding:10px 22px;
-border-radius:10px;
 display:inline-block;
-margin:20px 0;
+padding:18px 35px;
+border-radius:12px;
 font-weight:bold;
+margin:30px 0;
+}
+
+.section{
+margin-top:50px;
+text-align:center;
+}
+
+.features{
+font-size:20px;
+line-height:1.9;
+}
+
+.boxes{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:25px;
+margin-top:40px;
+}
+
+.box{
+background:white;
+padding:25px;
+border-radius:12px;
+box-shadow:0 10px 25px rgba(0,0,0,0.08);
+font-size:18px;
+}
+
+.cta{
+margin-top:50px;
 }
 
 .btn{
-display:inline-block;
-margin-top:20px;
 background:#25D366;
 color:white;
+padding:20px 40px;
+font-size:22px;
+border-radius:50px;
 text-decoration:none;
-padding:14px 28px;
-font-size:18px;
-border-radius:40px;
+font-weight:bold;
+box-shadow:0 10px 25px rgba(0,0,0,0.25);
+transition:0.3s;
+}
+
+.btn:hover{
+transform:scale(1.08);
+}
+
+.badge{
+margin-top:20px;
+font-size:20px;
+color:#ffd166;
 font-weight:bold;
 }
 
-.features{margin-top:20px;font-size:18px}
+footer{
+margin-top:70px;
+background:#1e3c72;
+color:white;
+padding:30px;
+text-align:center;
+font-size:16px;
+}
+
+.whatsapp{
+position:fixed;
+width:65px;
+height:65px;
+bottom:25px;
+right:25px;
+background:#25D366;
+border-radius:50%;
+text-align:center;
+font-size:34px;
+line-height:65px;
+color:white;
+text-decoration:none;
+box-shadow:0 8px 20px rgba(0,0,0,0.3);
+}
 
 </style>
 </head>
 
 <body>
 
-<div class="overlay">
+<header>
 
 <h1>Clases de Inglés</h1>
 
 <p>Aprende inglés fácil, práctico y económico</p>
 
-<div class="price">20.000 pesos mensuales</div>
-
-<div class="features">
-<p>✔ Clases todos los sábados</p>
-<p>✔ 100% virtual</p>
-<p>✔ Ideal para principiantes</p>
-<p>✔ Práctica de conversación</p>
+<div class="price">
+20.000 pesos mensuales
 </div>
 
-<a class="btn" href="pago.html">Pagar inscripción</a>
+<p class="badge">
+⚡ Cupos limitados - Inscripciones abiertas
+</p>
 
-<br><br>
+</header>
 
-<a class="btn" href="https://wa.me/573218065239" target="_blank">Escribir por WhatsApp</a>
+<div class="container">
 
-</div>
+<div class="section">
 
-</body>
-</html>
-```
+<h2>¿Qué incluyen las clases?</h2>
 
----
-
-# Archivo 2: pago.html
-
-```html
-<!DOCTYPE html>
-<html lang="es">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Pagar inscripción</title>
-
-<style>
-body{
-margin:0;
-font-family:Arial, Helvetica, sans-serif;
-background:#f4f6fb;
-text-align:center;
-padding:40px;
-}
-
-.box{
-background:white;
-max-width:500px;
-margin:auto;
-padding:30px;
-border-radius:12px;
-box-shadow:0 10px 25px rgba(0,0,0,0.15);
-}
-
-h1{margin-bottom:10px}
-
-.price{
-font-size:28px;
-font-weight:bold;
-margin:15px 0;
-}
-
-.key{
-font-size:24px;
-font-weight:bold;
-background:#ffd000;
-padding:10px;
-border-radius:8px;
-margin:10px 0;
-}
-
-.btn{
-display:inline-block;
-margin-top:20px;
-background:#25D366;
-color:white;
-text-decoration:none;
-padding:14px 28px;
-font-size:18px;
-border-radius:40px;
-font-weight:bold;
-}
-
-</style>
-</head>
-
-<body>
+<div class="boxes">
 
 <div class="box">
+📚 Clases todos los sábados
+</div>
 
-<h1>Pagar inscripción</h1>
+<div class="box">
+🗣️ Práctica de conversación
+</div>
 
-<p class="price">Valor: 20.000 pesos</p>
+<div class="box">
+🎯 Ideal para principiantes
+</div>
 
-<p>Realiza el pago a la siguiente llave bancaria:</p>
+<div class="box">
+👨‍🏫 Explicaciones claras y sencillas
+</div>
 
-<div class="key">321 806 5239</div>
+<div class="box">
+🌎 Aprende inglés para trabajo o viajes
+</div>
 
-<p>Banco: Bancomeva</p>
-
-<p>Después de realizar el pago envía el comprobante:</p>
-
-<a class="btn" href="https://wa.me/573218065239?text=Hola%20ya%20realicé%20el%20pago%20de%20las%20clases%20de%20inglés%20y%20adjunto%20el%20comprobante" target="_blank">
-Confirmar pago por WhatsApp
-</a>
-
-<br><br>
-
-<a href="index.html">← Volver</a>
+<div class="box">
+💬 Soporte y práctica adicional
+</div>
 
 </div>
 
+</div>
+
+<div class="section cta">
+
+<h2>Inscríbete ahora</h2>
+
+<a class="btn" 
+href="https://wa.me/573218065239?text=Hola%2C%20quiero%20información%20sobre%20las%20clases%20de%20inglés%20de%2020.000%20pesos%20mensuales"
+target="_blank">
+
+Escribir por WhatsApp
+
+</a>
+
+<p style="margin-top:20px;font-size:18px;">
+WhatsApp: 321 806 5239
+</p>
+
+</div>
+
+</div>
+
+<footer>
+
+Clases de Inglés | Pereira - Colombia<br>
+Contacto: 321 806 5239
+
+</footer>
+
+<a class="whatsapp"
+href="https://wa.me/573218065239?text=Hola%20quiero%20información%20sobre%20las%20clases%20de%20inglés"
+target="_blank">
+
+💬
+
+</a>
+
 </body>
 </html>
-
-
