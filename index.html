@@ -1,102 +1,143 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Clases de Inglés</title>
-  <style>
-    body{
-      margin:0;
-      font-family: Arial, Helvetica, sans-serif;
-      background: linear-gradient(135deg,#1e3c72,#2a5298);
-      color:white;
-      text-align:center;
-    }
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Clases de Inglés</title>
 
-    .container{
-      max-width:900px;
-      margin:auto;
-      padding:40px 20px;
-    }
+<style>
 
-    h1{
-      font-size:48px;
-      margin-bottom:10px;
-    }
+body{
+margin:0;
+font-family:Arial, Helvetica, sans-serif;
+background:#f4f6fb;
+color:#333;
+}
 
-    h2{
-      font-size:28px;
-      margin-top:0;
-      opacity:0.9;
-    }
+header{
+background:linear-gradient(135deg,#1e3c72,#2a5298);
+color:white;
+padding:60px 20px;
+text-align:center;
+}
 
-    .price{
-      font-size:40px;
-      background:#ffcc00;
-      color:#000;
-      display:inline-block;
-      padding:15px 25px;
-      border-radius:12px;
-      margin:25px 0;
-      font-weight:bold;
-    }
+header h1{
+font-size:48px;
+margin-bottom:10px;
+}
 
-    .features{
-      font-size:20px;
-      line-height:1.6;
-      margin-bottom:35px;
-    }
+header p{
+font-size:22px;
+opacity:0.9;
+}
 
-    .btn{
-      display:inline-block;
-      background:#25D366;
-      color:white;
-      font-size:22px;
-      padding:16px 30px;
-      border-radius:40px;
-      text-decoration:none;
-      font-weight:bold;
-      box-shadow:0 6px 15px rgba(0,0,0,0.25);
-      transition:transform 0.2s;
-    }
+.container{
+max-width:1000px;
+margin:auto;
+padding:40px 20px;
+}
 
-    .btn:hover{
-      transform:scale(1.05);
-    }
+.price{
+font-size:40px;
+background:#ffcc00;
+display:inline-block;
+padding:15px 30px;
+border-radius:12px;
+font-weight:bold;
+margin:30px 0;
+}
 
-    footer{
-      margin-top:60px;
-      font-size:14px;
-      opacity:0.8;
-    }
+.section{
+margin-top:40px;
+text-align:center;
+}
 
-  </style>
+.features{
+font-size:20px;
+line-height:1.8;
+}
+
+.cta{
+margin-top:40px;
+}
+
+.btn{
+background:#25D366;
+color:white;
+padding:18px 35px;
+font-size:22px;
+border-radius:50px;
+text-decoration:none;
+font-weight:bold;
+box-shadow:0 8px 20px rgba(0,0,0,0.25);
+transition:0.3s;
+}
+
+.btn:hover{
+transform:scale(1.08);
+}
+
+footer{
+margin-top:60px;
+background:#1e3c72;
+color:white;
+padding:25px;
+text-align:center;
+font-size:16px;
+}
+
+.whatsapp-float{
+position:fixed;
+width:60px;
+height:60px;
+bottom:25px;
+right:25px;
+background:#25D366;
+color:#FFF;
+border-radius:50px;
+text-align:center;
+font-size:30px;
+box-shadow:2px 2px 10px rgba(0,0,0,0.3);
+z-index:100;
+text-decoration:none;
+line-height:60px;
+}
+
+</style>
 </head>
+
 <body>
 
-  <div class="container">
+<header>
+<h1>Clases de Inglés</h1>
+<p>Aprende inglés fácil, rápido y a bajo costo</p>
+</header>
 
-    <h1>Clases de Inglés</h1>
-    <h2>Aprende inglés de forma fácil</h2>
+<div class="container">
 
-    <div class="price">20.000 pesos mensuales</div>
+<div class="section">
+<div class="price">20.000 pesos mensuales</div>
+</div>
 
-    <div class="features">
-      ✔ Clases todos los sábados<br>
-      ✔ Explicaciones claras<br>
-      ✔ Práctica de conversación<br>
-      ✔ Ideal para principiantes
-    </div>
+<div class="section features">
+<p>✔ Clases todos los sábados</p>
+<p>✔ Ideal para principiantes</p>
+<p>✔ Práctica de conversación</p>
+<p>✔ Explicaciones claras y sencillas</p>
+</div>
 
-    <a class="btn" href="https://wa.me/573218065239" target="_blank">
-      Inscribirme por WhatsApp
-    </a>
+<div class="section cta">
+<a class="btn" href="https://wa.me/573218065239" target="_blank">Inscribirme por WhatsApp</a>
+</div>
 
-    <footer>
-      Contacto: 321 806 5239
-    </footer>
+</div>
 
-  </div>
+<footer>
+Contacto WhatsApp: 321 806 5239
+</footer>
+
+<a class="whatsapp-float" href="https://wa.me/573218065239" target="_blank">💬</a>
 
 </body>
 </html>
+
