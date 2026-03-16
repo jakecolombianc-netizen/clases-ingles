@@ -6,14 +6,11 @@
 <title>Clases de Inglés</title>
 
 <style>
-
 body{
 margin:0;
 font-family:Arial, Helvetica, sans-serif;
 color:white;
 text-align:center;
-
-/* fondo con imagen tipo academia */
 background-image:url("https://images.unsplash.com/photo-1522202176988-66273c2fd55f");
 background-size:cover;
 background-position:center;
@@ -21,72 +18,87 @@ background-attachment:fixed;
 }
 
 .overlay{
-background:rgba(0,0,0,0.65);
+background:rgba(0,0,0,0.7);
 min-height:100vh;
 padding:40px 20px;
 }
 
-h1{
-font-size:42px;
-margin-bottom:10px;
-}
+h1{font-size:40px;margin-bottom:10px}
+.subtitle{font-size:20px;margin-bottom:15px}
 
-.subtitle{
-font-size:20px;
-margin-bottom:20px;
-}
-
-.flags img{
-width:45px;
-margin:5px;
-}
+.flags img{width:40px;margin:4px}
 
 .price{
 background:#ffd000;
 color:#000;
-font-size:32px;
-padding:12px 25px;
+font-size:30px;
+padding:10px 22px;
 border-radius:10px;
 display:inline-block;
-margin:20px 0;
+margin:18px 0;
 font-weight:bold;
 }
 
 .info{
-max-width:600px;
+max-width:520px;
 margin:auto;
 font-size:18px;
-line-height:1.7;
+line-height:1.6;
 }
 
-.features{
-margin-top:20px;
-}
-
-.features p{
-margin:6px 0;
-}
-
-.virtual-icons{
-margin-top:20px;
-font-size:28px;
-}
+.features p{margin:6px 0}
 
 .btn{
 display:inline-block;
-margin-top:25px;
+margin-top:15px;
 background:#25D366;
 color:white;
 text-decoration:none;
-padding:16px 32px;
-font-size:20px;
+padding:14px 28px;
+font-size:18px;
 border-radius:40px;
 font-weight:bold;
-box-shadow:0 8px 18px rgba(0,0,0,0.3);
+box-shadow:0 6px 14px rgba(0,0,0,0.4);
 }
 
-.btn:hover{
-transform:scale(1.05);
+.paybox{
+margin-top:30px;
+background:rgba(255,255,255,0.12);
+padding:20px;
+border-radius:10px;
+max-width:420px;
+margin-left:auto;
+margin-right:auto;
+}
+
+.paybox strong{
+font-size:22px;
+color:#ffd000;
+}
+
+form{
+margin-top:30px;
+background:rgba(255,255,255,0.12);
+padding:20px;
+border-radius:10px;
+max-width:420px;
+margin-left:auto;
+margin-right:auto;
+}
+
+input{
+width:100%;
+padding:10px;
+margin:8px 0;
+border:none;
+border-radius:6px;
+}
+
+.submit{
+background:#ffd000;
+color:black;
+font-weight:bold;
+cursor:pointer;
 }
 
 .whatsapp{
@@ -104,13 +116,24 @@ color:white;
 box-shadow:0 8px 18px rgba(0,0,0,0.4);
 }
 
-.footer{
-margin-top:35px;
-font-size:14px;
-opacity:0.9;
-}
-
+.footer{margin-top:30px;font-size:14px;opacity:0.9}
 </style>
+
+<script>
+function enviarFormulario(){
+
+let nombre=document.getElementById('nombre').value;
+let telefono=document.getElementById('telefono').value;
+let email=document.getElementById('email').value;
+
+let mensaje=`Hola, quiero inscribirme en las clases de inglés.%0A%0ANombre: ${nombre}%0ATeléfono: ${telefono}%0AEmail: ${email}`;
+
+window.open(`https://wa.me/573218065239?text=${mensaje}`,'_blank');
+
+return false;
+}
+</script>
+
 </head>
 
 <body>
@@ -135,20 +158,45 @@ opacity:0.9;
 <p>✔ 100% virtual</p>
 <p>✔ Ideal para principiantes</p>
 <p>✔ Práctica de conversación</p>
-<p>✔ Aprende desde casa</p>
 </div>
 
-<div class="virtual-icons">
-💻 🌐 🎧 📚
+<a class="btn" href="https://wa.me/573218065239" target="_blank">Escribir por WhatsApp</a>
+
 </div>
 
-<a class="btn" href="https://wa.me/573218065239?text=Hola%2C%20quiero%20informaci%C3%B3n%20sobre%20las%20clases%20de%20ingl%C3%A9s" target="_blank">
-Inscribirme por WhatsApp
+<!-- SECCIÓN DE PAGO -->
+<div class="paybox">
+
+<h3>Pagar inscripción</h3>
+
+<p>Realiza el pago de <strong>20.000 pesos</strong> usando la siguiente llave bancaria:</p>
+
+<p><strong>Llave Bancaria: 3218065239</strong></p>
+
+<p>Banco: Bancomeva</p>
+
+<p>Después de realizar el pago, envía el comprobante por WhatsApp.</p>
+
+<a class="btn" href="https://wa.me/573218065239?text=Hola%20ya%20realicé%20el%20pago%20de%20las%20clases%20de%20inglés%20y%20adjunto%20el%20comprobante" target="_blank">
+Confirmar pago por WhatsApp
 </a>
 
-<p style="margin-top:15px;">WhatsApp: 321 806 5239</p>
-
 </div>
+
+<!-- FORMULARIO -->
+<form onsubmit="return enviarFormulario()">
+
+<h3>Formulario de inscripción</h3>
+
+<input id="nombre" type="text" placeholder="Nombre" required>
+
+<input id="telefono" type="text" placeholder="Teléfono" required>
+
+<input id="email" type="email" placeholder="Email" required>
+
+<input class="submit" type="submit" value="Enviar inscripción">
+
+</form>
 
 <div class="footer">
 Clases de Inglés Online
