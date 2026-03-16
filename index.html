@@ -1,3 +1,6 @@
+# Archivo 1: index.html
+
+```html
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -14,7 +17,6 @@ text-align:center;
 background-image:url("https://images.unsplash.com/photo-1522202176988-66273c2fd55f");
 background-size:cover;
 background-position:center;
-background-attachment:fixed;
 }
 
 .overlay{
@@ -23,10 +25,7 @@ min-height:100vh;
 padding:40px 20px;
 }
 
-h1{font-size:40px;margin-bottom:10px}
-.subtitle{font-size:20px;margin-bottom:15px}
-
-.flags img{width:40px;margin:4px}
+h1{font-size:40px}
 
 .price{
 background:#ffd000;
@@ -35,22 +34,13 @@ font-size:30px;
 padding:10px 22px;
 border-radius:10px;
 display:inline-block;
-margin:18px 0;
+margin:20px 0;
 font-weight:bold;
 }
 
-.info{
-max-width:520px;
-margin:auto;
-font-size:18px;
-line-height:1.6;
-}
-
-.features p{margin:6px 0}
-
 .btn{
 display:inline-block;
-margin-top:15px;
+margin-top:20px;
 background:#25D366;
 color:white;
 text-decoration:none;
@@ -58,82 +48,11 @@ padding:14px 28px;
 font-size:18px;
 border-radius:40px;
 font-weight:bold;
-box-shadow:0 6px 14px rgba(0,0,0,0.4);
 }
 
-.paybox{
-margin-top:30px;
-background:rgba(255,255,255,0.12);
-padding:20px;
-border-radius:10px;
-max-width:420px;
-margin-left:auto;
-margin-right:auto;
-}
+.features{margin-top:20px;font-size:18px}
 
-.paybox strong{
-font-size:22px;
-color:#ffd000;
-}
-
-form{
-margin-top:30px;
-background:rgba(255,255,255,0.12);
-padding:20px;
-border-radius:10px;
-max-width:420px;
-margin-left:auto;
-margin-right:auto;
-}
-
-input{
-width:100%;
-padding:10px;
-margin:8px 0;
-border:none;
-border-radius:6px;
-}
-
-.submit{
-background:#ffd000;
-color:black;
-font-weight:bold;
-cursor:pointer;
-}
-
-.whatsapp{
-position:fixed;
-bottom:20px;
-right:20px;
-background:#25D366;
-width:60px;
-height:60px;
-border-radius:50%;
-font-size:32px;
-line-height:60px;
-text-decoration:none;
-color:white;
-box-shadow:0 8px 18px rgba(0,0,0,0.4);
-}
-
-.footer{margin-top:30px;font-size:14px;opacity:0.9}
 </style>
-
-<script>
-function enviarFormulario(){
-
-let nombre=document.getElementById('nombre').value;
-let telefono=document.getElementById('telefono').value;
-let email=document.getElementById('email').value;
-
-let mensaje=`Hola, quiero inscribirme en las clases de inglés.%0A%0ANombre: ${nombre}%0ATeléfono: ${telefono}%0AEmail: ${email}`;
-
-window.open(`https://wa.me/573218065239?text=${mensaje}`,'_blank');
-
-return false;
-}
-</script>
-
 </head>
 
 <body>
@@ -142,16 +61,9 @@ return false;
 
 <h1>Clases de Inglés</h1>
 
-<p class="subtitle">Aprende inglés fácil, práctico y económico</p>
-
-<div class="flags">
-<img src="https://flagcdn.com/w40/us.png">
-<img src="https://flagcdn.com/w40/gb.png">
-</div>
+<p>Aprende inglés fácil, práctico y económico</p>
 
 <div class="price">20.000 pesos mensuales</div>
-
-<div class="info">
 
 <div class="features">
 <p>✔ Clases todos los sábados</p>
@@ -160,52 +72,107 @@ return false;
 <p>✔ Práctica de conversación</p>
 </div>
 
+<a class="btn" href="pago.html">Pagar inscripción</a>
+
+<br><br>
+
 <a class="btn" href="https://wa.me/573218065239" target="_blank">Escribir por WhatsApp</a>
 
 </div>
 
-<!-- SECCIÓN DE PAGO -->
-<div class="paybox">
+</body>
+</html>
+```
 
-<h3>Pagar inscripción</h3>
+---
 
-<p>Realiza el pago de <strong>20.000 pesos</strong> usando la siguiente llave bancaria:</p>
+# Archivo 2: pago.html
 
-<p><strong>Llave Bancaria: 3218065239</strong></p>
+```html
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pagar inscripción</title>
+
+<style>
+body{
+margin:0;
+font-family:Arial, Helvetica, sans-serif;
+background:#f4f6fb;
+text-align:center;
+padding:40px;
+}
+
+.box{
+background:white;
+max-width:500px;
+margin:auto;
+padding:30px;
+border-radius:12px;
+box-shadow:0 10px 25px rgba(0,0,0,0.15);
+}
+
+h1{margin-bottom:10px}
+
+.price{
+font-size:28px;
+font-weight:bold;
+margin:15px 0;
+}
+
+.key{
+font-size:24px;
+font-weight:bold;
+background:#ffd000;
+padding:10px;
+border-radius:8px;
+margin:10px 0;
+}
+
+.btn{
+display:inline-block;
+margin-top:20px;
+background:#25D366;
+color:white;
+text-decoration:none;
+padding:14px 28px;
+font-size:18px;
+border-radius:40px;
+font-weight:bold;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="box">
+
+<h1>Pagar inscripción</h1>
+
+<p class="price">Valor: 20.000 pesos</p>
+
+<p>Realiza el pago a la siguiente llave bancaria:</p>
+
+<div class="key">321 806 5239</div>
 
 <p>Banco: Bancomeva</p>
 
-<p>Después de realizar el pago, envía el comprobante por WhatsApp.</p>
+<p>Después de realizar el pago envía el comprobante:</p>
 
 <a class="btn" href="https://wa.me/573218065239?text=Hola%20ya%20realicé%20el%20pago%20de%20las%20clases%20de%20inglés%20y%20adjunto%20el%20comprobante" target="_blank">
 Confirmar pago por WhatsApp
 </a>
 
-</div>
+<br><br>
 
-<!-- FORMULARIO -->
-<form onsubmit="return enviarFormulario()">
-
-<h3>Formulario de inscripción</h3>
-
-<input id="nombre" type="text" placeholder="Nombre" required>
-
-<input id="telefono" type="text" placeholder="Teléfono" required>
-
-<input id="email" type="email" placeholder="Email" required>
-
-<input class="submit" type="submit" value="Enviar inscripción">
-
-</form>
-
-<div class="footer">
-Clases de Inglés Online
-</div>
+<a href="index.html">← Volver</a>
 
 </div>
-
-<a class="whatsapp" href="https://wa.me/573218065239" target="_blank">💬</a>
 
 </body>
 </html>
+
 
