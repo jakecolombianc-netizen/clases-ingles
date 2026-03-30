@@ -9,9 +9,10 @@
 body{
 margin:0;
 font-family:Arial, Helvetica, sans-serif;
-background-image:url('/mnt/data/Clases de inglés.png');
+background-image:url("fondo.jpg");
 background-size:cover;
 background-position:center;
+background-attachment:fixed;
 color:white;
 }
 
@@ -23,8 +24,13 @@ text-align:center;
 }
 
 h1{
-font-size:40px;
+font-size:42px;
+margin-bottom:10px;
+}
+
+.subtitle{
 margin-bottom:30px;
+font-size:18px;
 }
 
 .container{
@@ -39,7 +45,7 @@ margin:auto;
 background:rgba(255,255,255,0.1);
 border-radius:15px;
 padding:25px;
-backdrop-filter:blur(5px);
+backdrop-filter:blur(6px);
 box-shadow:0 8px 20px rgba(0,0,0,0.4);
 transition:0.3s;
 }
@@ -49,18 +55,27 @@ transform:scale(1.05);
 }
 
 .card h2{
+margin-bottom:10px;
+font-size:24px;
+}
+
+.card p{
 margin-bottom:15px;
 }
 
 .btn{
 display:inline-block;
-margin-top:10px;
 padding:12px 20px;
 border-radius:30px;
 background:#ffd000;
 color:black;
 text-decoration:none;
 font-weight:bold;
+transition:0.3s;
+}
+
+.btn:hover{
+transform:scale(1.05);
 }
 
 .disabled{
@@ -68,45 +83,63 @@ background:gray;
 pointer-events:none;
 }
 
+.footer{
+margin-top:40px;
+font-size:14px;
+opacity:0.8;
+}
 </style>
+
 </head>
 
 <body>
 
 <div class="overlay">
 
-<h1>Selecciona tu grupo</h1>
+<h1>Reserva tu cupo</h1>
+<p class="subtitle">Selecciona el grupo que prefieras</p>
 
 <div class="container">
 
 <div class="card">
 <h2>Grupo A</h2>
-<p>Disponible</p>
-<a class="btn" href="https://forms.gle/f2Hv12E26fUUeybe8" target="_blank">Ir al grupo</a>
+<p>Clases disponibles</p>
+<a class="btn" href="https://forms.gle/f2Hv12E26fUUeybe8" target="_blank">
+Ir al grupo
+</a>
 </div>
 
 <div class="card">
 <h2>Grupo B</h2>
-<p>Disponible</p>
-<a class="btn" href="https://forms.gle/VneQMB8bw5UcjB959" target="_blank">Ir al grupo</a>
+<p>Clases disponibles</p>
+<a class="btn" href="https://forms.gle/VneQMB8bw5UcjB959" target="_blank">
+Ir al grupo
+</a>
 </div>
 
 <div class="card">
 <h2>Grupo C</h2>
 <p>Próximamente</p>
-<a class="btn disabled">No disponible</a>
+<a class="btn disabled">
+No disponible
+</a>
 </div>
 
 <div class="card">
 <h2>Grupo D</h2>
 <p>Próximamente</p>
-<a class="btn disabled">No disponible</a>
+<a class="btn disabled">
+No disponible
+</a>
 </div>
 
+</div>
+
+<div class="footer">
+Clases de Inglés Online © 2026
 </div>
 
 </div>
 
 </body>
 </html>
-
