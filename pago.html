@@ -1,11 +1,67 @@
-<!-- ======= Imagen con la llave de pago ======= -->
-<div style="margin-top:20px;">
-    <p><strong>Realiza tu pago usando tu app bancaria:</strong></p>
-    
-    <img src="tu-imagen.png" alt="Llave de pago"
-         style="width:100%; max-width:250px; margin-top:10px; border-radius:10px; box-shadow:0 0 10px rgba(0,0,0,0.1);">
+box-shadow: 0 0 15px rgba(0,0,0,0.1);
+text-align: center;
+width: 360px;
+}
+h1 {
+    color: #333;
+}
+.precio {
+    font-size: 28px;
+    color: #2c7be5;
+    margin: 20px 0;
+}
+.metodos {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #555;
+}
+form {
+    margin-top: 20px;
+}
+</style>
+</head>
+<body>
 
-    <p style="margin-top:10px; font-size:16px; color:#2c7be5; font-weight:bold;">
-        Llave: @COO3218065239
-    </p>
+<div class="contenedor">
+<h1>Pago del Curso</h1>
+<p>Accede a las clases de inglés al completar tu pago.</p>
+
+<div class="precio">$20.000 COP</div>
+
+<!-- ======= Botón de pago ePayco ======= -->
+<form>
+    <script src='https://checkout.epayco.co/checkout.js'
+        data-epayco-key='cd017e081e174550dc22d0d1ca8c6c64' 
+        class='epayco-button' 
+        data-epayco-amount='20000' 
+        data-epayco-tax='0.00'  
+        data-epayco-tax-ico='0.00'               
+        data-epayco-tax-base='20000'
+        data-epayco-name='Clases de inglés' 
+        data-epayco-description='Clases de inglés' 
+        data-epayco-currency='cop'    
+        data-epayco-country='CO' 
+        data-epayco-test='true' 
+        data-epayco-external='false' 
+        data-epayco-response=''  
+        data-epayco-confirmation='' 
+        data-epayco-button='https://multimedia.epayco.co/dashboard/btns/btn5.png'> 
+    </script> 
+</form>
+<!-- =================================== -->
+
+<div class="metodos">
+Aceptamos:<br>
+💳 Tarjetas de crédito<br>
+🏦 PSE<br>
+📱 Nequi
 </div>
+
+<p style="margin-top:15px;font-size:12px;color:#777;">
+Pagos procesados para @COO3218065239
+</p>
+
+</div>
+
+</body>
+</html>
