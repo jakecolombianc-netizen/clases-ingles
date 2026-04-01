@@ -51,17 +51,26 @@ h1 {
 
     <div class="precio">$20.000 COP</div>
 
-    <button style="
-        background:#2c7be5;
-        color:white;
-        border:none;
-        padding:12px 20px;
-        border-radius:8px;
-        font-size:16px;
-        cursor:pointer;
-    ">
-        Pagar con ePayco
-    </button>
+    <!-- ✅ ePayco REAL funcionando -->
+    <form>
+        <script src='https://checkout.epayco.co/checkout.js'
+            data-epayco-key='cd017e081e174550dc22d0d1ca8c6c64' 
+            class='epayco-button' 
+            data-epayco-amount='20000' 
+            data-epayco-tax='0.00'  
+            data-epayco-tax-ico='0.00'               
+            data-epayco-tax-base='20000'
+            data-epayco-name='Clases de inglés' 
+            data-epayco-description='Clases de inglés' 
+            data-epayco-currency='cop'    
+            data-epayco-country='CO' 
+            data-epayco-test='true' 
+            data-epayco-external='false' 
+            data-epayco-response=''  
+            data-epayco-confirmation='' 
+            data-epayco-button='https://multimedia.epayco.co/dashboard/btns/btn5.png'> 
+        </script> 
+    </form>
 
     <div class="metodos">
         Aceptamos:<br>
