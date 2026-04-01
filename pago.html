@@ -12,6 +12,7 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
+    margin: 0;
 }
 
 .contenedor {
@@ -38,53 +39,40 @@ h1 {
     font-size: 14px;
     color: #555;
 }
-
-form {
-    margin-top: 20px;
-}
 </style>
+
 </head>
 
 <body>
 
 <div class="contenedor">
-<h1>Pago del Curso</h1>
-<p>Accede a las clases de inglés al completar tu pago.</p>
+    <h1>Pago del Curso</h1>
+    <p>Accede a las clases de inglés al completar tu pago.</p>
 
-<div class="precio">$20.000 COP</div>
+    <div class="precio">$20.000 COP</div>
 
-<!-- Botón ePayco -->
-<form>
-    <script src='https://checkout.epayco.co/checkout.js'
-        data-epayco-key='cd017e081e174550dc22d0d1ca8c6c64' 
-        class='epayco-button' 
-        data-epayco-amount='20000' 
-        data-epayco-tax='0.00'  
-        data-epayco-tax-ico='0.00'               
-        data-epayco-tax-base='20000'
-        data-epayco-name='Clases de inglés' 
-        data-epayco-description='Clases de inglés' 
-        data-epayco-currency='cop'    
-        data-epayco-country='CO' 
-        data-epayco-test='true' 
-        data-epayco-external='false' 
-        data-epayco-response=''  
-        data-epayco-confirmation='' 
-        data-epayco-button='https://multimedia.epayco.co/dashboard/btns/btn5.png'> 
-    </script> 
-</form>
+    <button style="
+        background:#2c7be5;
+        color:white;
+        border:none;
+        padding:12px 20px;
+        border-radius:8px;
+        font-size:16px;
+        cursor:pointer;
+    ">
+        Pagar con ePayco
+    </button>
 
-<div class="metodos">
-Aceptamos:<br>
-💳 Tarjetas de crédito<br>
-🏦 PSE<br>
-📱 Nequi
-</div>
+    <div class="metodos">
+        Aceptamos:<br>
+        💳 Tarjetas de crédito<br>
+        🏦 PSE<br>
+        📱 Nequi
+    </div>
 
-<p style="margin-top:15px;font-size:12px;color:#777;">
-Pagos procesados para @COO3218065239
-</p>
-
+    <p style="margin-top:15px;font-size:12px;color:#777;">
+        Pagos procesados para @COO3218065239
+    </p>
 </div>
 
 </body>
