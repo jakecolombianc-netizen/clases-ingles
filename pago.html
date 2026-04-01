@@ -1,5 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Pago del Curso</title>
+
+<style>
+body {
+    font-family: Arial, sans-serif;
+    background: #f5f7fb;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.contenedor {
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    text-align: center;
+    width: 360px;
+}
+
+h1 {
+    color: #333;
+}
+
+.precio {
+    font-size: 28px;
+    color: #2c7be5;
+    margin: 20px 0;
+}
+
+.metodos {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #555;
+}
+
+form {
+    margin-top: 20px;
+}
 </style>
 </head>
+
 <body>
 
 <div class="contenedor">
@@ -8,7 +53,7 @@
 
 <div class="precio">$20.000 COP</div>
 
-<!-- ======= Botón de pago ePayco ======= -->
+<!-- Botón ePayco -->
 <form>
     <script src='https://checkout.epayco.co/checkout.js'
         data-epayco-key='cd017e081e174550dc22d0d1ca8c6c64' 
@@ -28,7 +73,6 @@
         data-epayco-button='https://multimedia.epayco.co/dashboard/btns/btn5.png'> 
     </script> 
 </form>
-<!-- =================================== -->
 
 <div class="metodos">
 Aceptamos:<br>
